@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+      <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />   
+    <title>Let's Rock</title>
+  </head>
+  <script>
+    function embedMusic2(temp){
+  console.log("reached");
+  const element = document.getElementById("player");
+  if(element!=null)
+element.remove(); 
+    var x="https://open.spotify.com/embed/track/"
+    var url=x.concat("",`${temp}`)
+    url=url.concat("","?utm_source=generator")
+    console.log(url);
+    const v = document.createElement('iframe');
+    const video = document.createElement('div');
+    v.setAttribute('id', 'player');
+    v.setAttribute('src', `${url}`);
+    v.setAttribute('width', '100%');
+    v.setAttribute('height', '380');
+    v.setAttribute('border-radius', '12px');
+    v.setAttribute('allow','picture-in-picture;autoplay; clipboard-write; encrypted-media; fullscreen;')
+    video.append(v);
+    var y=document.querySelector(".sidebar")
+    y.append(video);
+    
+  }
+  </script>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+   
+  </body>
+  
+</html>

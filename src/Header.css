@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .header__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  p{
+    font-size: 14px;
+    margin-top: 3px;
+    color: gray;
+    display: flex;
+  }
+  h1{
+    font-size: 16px;
+    margin-inline-end: auto;
+  }
+.srow{
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+  .srow:hover {
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.8;
+  }
+
+  .header__left {
+    flex: 0.5;
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    color: gray;
+    align-items: center;
+  }
+  
+  .header__left > input {
+    border: none;
+    width: 100%;
+  }
+  
+  .header__right > h4 {
+    margin-left: 10px;
+  }
