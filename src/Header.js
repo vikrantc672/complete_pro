@@ -13,6 +13,8 @@ async function showSongs(){
     headers:{
         "Access-Control-Allow-Headers": "Authorization",
       'Authorization':'Bearer '+t,
+      
+      
     }
   }
   var name=document.querySelector(".searchSong").value;

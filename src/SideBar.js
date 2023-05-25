@@ -62,6 +62,7 @@ function playPlaylist(){
     headers:{
         "Access-Control-Allow-Headers": "Authorization",
       'Authorization':'Bearer '+t,
+      
     }
   }
   console.log(t);
